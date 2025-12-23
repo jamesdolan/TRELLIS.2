@@ -1,0 +1,72 @@
+# Git
+.git
+.gitignore
+.gitmodules
+
+# Python cache
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info
+.eggs
+*.egg
+.mypy_cache
+.pytest_cache
+.ruff_cache
+
+# Virtual environments
+venv
+.venv
+ENV
+env
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Build artifacts
+build
+dist
+*.whl
+
+# Docker
+Dockerfile
+docker-compose.yml
+.docker
+.dockerignore
+
+# Documentation (optional - remove these lines if you want docs in container)
+*.md
+!README.md
+
+# Temporary files
+tmp
+*.tmp
+*.temp
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Model weights cache (downloaded at runtime)
+.cache
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Test files
+tests
+test_*.py
+*_test.py
+

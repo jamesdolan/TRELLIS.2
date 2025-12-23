@@ -57,7 +57,9 @@ fi
 
 # Get system information
 WORKDIR=$(pwd)
-if command -v nvidia-smi > /dev/null; then
+if [ -n "$PLATFORM" ]; then
+    echo "Using PLATFORM=$PLATFORM from environment"
+elif command -v nvidia-smi > /dev/null; then
     PLATFORM="cuda"
 elif command -v rocminfo > /dev/null; then
     PLATFORM="hip"
